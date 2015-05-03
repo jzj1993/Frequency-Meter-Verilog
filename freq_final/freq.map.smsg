@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at freq.v(40): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at freq.v(99): always construct contains both blocking and non-blocking assignments

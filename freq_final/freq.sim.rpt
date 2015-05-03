@@ -1,0 +1,524 @@
+Simulator report for freq
+Thu Jan 15 12:13:07 2015
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 4.0 s        ;
+; Simulation Netlist Size     ; 240 nodes    ;
+; Simulation Coverage         ;      74.66 % ;
+; Total Number of Transitions ; 1012085      ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; MAX II       ;
+; Device                      ; EPM240T100C5 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      74.66 % ;
+; Total nodes checked                                 ; 240          ;
+; Total output ports checked                          ; 292          ;
+; Total output ports with complete 1/0-value coverage ; 218          ;
+; Total output ports with no 1/0-value coverage       ; 71           ;
+; Total output ports with no 1-value coverage         ; 71           ;
+; Total output ports with no 0-value coverage         ; 74           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                          ;
++----------------------+----------------------------+------------------+
+; Node Name            ; Output Port Name           ; Output Port Type ;
++----------------------+----------------------------+------------------+
+; |freq|pos[1]         ; |freq|pos[1]               ; regout           ;
+; |freq|pos[0]         ; |freq|pos[0]               ; regout           ;
+; |freq|digi_buf[0]    ; |freq|digi_buf[0]          ; regout           ;
+; |freq|digi_buf[4]    ; |freq|Mux3~0               ; combout          ;
+; |freq|digi_buf[12]   ; |freq|digi_buf[12]         ; regout           ;
+; |freq|digi_buf[8]    ; |freq|Mux3~1               ; combout          ;
+; |freq|digi_buf[1]    ; |freq|digi_buf[1]          ; regout           ;
+; |freq|digi_buf[5]    ; |freq|Mux2~0               ; combout          ;
+; |freq|digi_buf[9]    ; |freq|Mux2~1               ; combout          ;
+; |freq|digi_buf[11]   ; |freq|Mux0~1               ; combout          ;
+; |freq|segdat~2       ; |freq|segdat~2             ; combout          ;
+; |freq|Decoder1~0     ; |freq|Decoder1~0           ; combout          ;
+; |freq|WideOr3~0      ; |freq|WideOr3~0            ; combout          ;
+; |freq|WideOr2~0      ; |freq|WideOr2~0            ; combout          ;
+; |freq|WideOr1~0      ; |freq|WideOr1~0            ; combout          ;
+; |freq|WideOr0~0      ; |freq|WideOr0~0            ; combout          ;
+; |freq|Mux4~0         ; |freq|Mux4~0               ; combout          ;
+; |freq|Decoder0~0     ; |freq|Decoder0~0           ; combout          ;
+; |freq|Decoder0~1     ; |freq|Decoder0~1           ; combout          ;
+; |freq|Decoder0~2     ; |freq|Decoder0~2           ; combout          ;
+; |freq|Decoder0~3     ; |freq|Decoder0~3           ; combout          ;
+; |freq|m[0]~reg0      ; |freq|m[0]~reg0            ; regout           ;
+; |freq|m[1]~reg0      ; |freq|m[1]~reg0            ; regout           ;
+; |freq|m[2]~reg0      ; |freq|m[2]~reg0            ; regout           ;
+; |freq|m[3]~reg0      ; |freq|m[3]~reg0            ; regout           ;
+; |freq|m[4]~reg0      ; |freq|m[4]~reg0            ; regout           ;
+; |freq|m[5]~reg0      ; |freq|m[5]~reg0            ; regout           ;
+; |freq|m[6]~reg0      ; |freq|m[6]~reg0            ; regout           ;
+; |freq|m[7]~reg0      ; |freq|m[7]~reg0            ; regout           ;
+; |freq|m[8]~reg0      ; |freq|m[8]~reg0            ; regout           ;
+; |freq|m[9]~reg0      ; |freq|m[9]~reg0            ; regout           ;
+; |freq|m[10]~reg0     ; |freq|m[10]~reg0           ; regout           ;
+; |freq|m[11]~reg0     ; |freq|m[11]~reg0           ; regout           ;
+; |freq|m[12]~reg0     ; |freq|m[12]~reg0           ; regout           ;
+; |freq|mt[0]~reg0     ; |freq|mt[0]~25             ; cout             ;
+; |freq|mt[1]~reg0     ; |freq|mt[1]~27COUT1_59     ; cout1            ;
+; |freq|mt[2]~reg0     ; |freq|mt[2]~29COUT1_61     ; cout1            ;
+; |freq|mt[3]~reg0     ; |freq|mt[3]~31COUT1_63     ; cout1            ;
+; |freq|mt[4]~reg0     ; |freq|mt[4]~33COUT1_65     ; cout1            ;
+; |freq|mt[5]~reg0     ; |freq|mt[5]~35             ; cout             ;
+; |freq|mt[6]~reg0     ; |freq|mt[6]~37             ; cout0            ;
+; |freq|mt[7]~reg0     ; |freq|mt[7]~39             ; cout0            ;
+; |freq|mt[8]~reg0     ; |freq|mt[8]~41             ; cout0            ;
+; |freq|mt[9]~reg0     ; |freq|mt[9]~43             ; cout0            ;
+; |freq|div[0]~reg0    ; |freq|div[0]~101           ; cout0            ;
+; |freq|div[0]~reg0    ; |freq|div[0]~101COUT1_159  ; cout1            ;
+; |freq|div[1]~reg0    ; |freq|div[1]~103           ; cout0            ;
+; |freq|div[1]~reg0    ; |freq|div[1]~103COUT1_161  ; cout1            ;
+; |freq|div[2]~reg0    ; |freq|div[2]~105           ; cout0            ;
+; |freq|div[2]~reg0    ; |freq|div[2]~105COUT1_163  ; cout1            ;
+; |freq|div[3]~reg0    ; |freq|div[3]~107           ; cout0            ;
+; |freq|div[3]~reg0    ; |freq|div[3]~107COUT1_165  ; cout1            ;
+; |freq|div[4]~reg0    ; |freq|div[4]~109           ; cout             ;
+; |freq|div[5]~reg0    ; |freq|div[5]~111           ; cout0            ;
+; |freq|div[5]~reg0    ; |freq|div[5]~111COUT1_167  ; cout1            ;
+; |freq|div[6]~reg0    ; |freq|div[6]~113           ; cout0            ;
+; |freq|div[6]~reg0    ; |freq|div[6]~113COUT1_169  ; cout1            ;
+; |freq|div[7]~reg0    ; |freq|div[7]~115           ; cout0            ;
+; |freq|div[7]~reg0    ; |freq|div[7]~115COUT1_171  ; cout1            ;
+; |freq|div[8]~reg0    ; |freq|div[8]~117           ; cout0            ;
+; |freq|div[8]~reg0    ; |freq|div[8]~117COUT1_173  ; cout1            ;
+; |freq|div[9]~reg0    ; |freq|div[9]~119           ; cout             ;
+; |freq|div[10]~reg0   ; |freq|div[10]~121          ; cout0            ;
+; |freq|div[11]~reg0   ; |freq|div[11]~123          ; cout0            ;
+; |freq|div[11]~reg0   ; |freq|div[11]~123COUT1_177 ; cout1            ;
+; |freq|div[12]~reg0   ; |freq|div[12]~125          ; cout0            ;
+; |freq|div[12]~reg0   ; |freq|div[12]~125COUT1_179 ; cout1            ;
+; |freq|div[13]~reg0   ; |freq|div[13]~127          ; cout0            ;
+; |freq|div[13]~reg0   ; |freq|div[13]~127COUT1_181 ; cout1            ;
+; |freq|div[14]~reg0   ; |freq|div[14]~129          ; cout             ;
+; |freq|div[15]~reg0   ; |freq|div[15]~131          ; cout0            ;
+; |freq|div[16]~reg0   ; |freq|div[16]~133          ; cout0            ;
+; |freq|div[17]~reg0   ; |freq|div[17]~135          ; cout0            ;
+; |freq|div[18]~reg0   ; |freq|div[18]~137          ; cout0            ;
+; |freq|flag_key[1]    ; |freq|flag_key[1]          ; regout           ;
+; |freq|ss.ss_count_m  ; |freq|ss.ss_count_m        ; regout           ;
+; |freq|always5~2      ; |freq|always5~2            ; combout          ;
+; |freq|ss.ss_calc     ; |freq|ss.ss_calc           ; regout           ;
+; |freq|LessThan0~0    ; |freq|LessThan0~0          ; combout          ;
+; |freq|LessThan0~1    ; |freq|LessThan0~1          ; combout          ;
+; |freq|LessThan0~6    ; |freq|LessThan0~6          ; combout          ;
+; |freq|always5~0      ; |freq|always5~0            ; combout          ;
+; |freq|ss.ss_count_mt ; |freq|ss.ss_count_mt       ; regout           ;
+; |freq|ss.ss_idle     ; |freq|ss.ss_idle           ; regout           ;
+; |freq|digi_buf[0]~33 ; |freq|digi_buf[0]~33       ; combout          ;
+; |freq|cnt_d[2]       ; |freq|cnt_d[2]             ; regout           ;
+; |freq|cnt_d[0]       ; |freq|cnt_d[0]             ; regout           ;
+; |freq|cnt_d[1]       ; |freq|cnt_d[1]             ; regout           ;
+; |freq|Equal1~0       ; |freq|Equal1~0             ; combout          ;
+; |freq|clk_1k         ; |freq|clk_1k               ; regout           ;
+; |freq|Selector16~2   ; |freq|Selector16~2         ; combout          ;
+; |freq|LessThan1~1    ; |freq|LessThan1~1          ; combout          ;
+; |freq|LessThan1~2    ; |freq|LessThan1~2          ; combout          ;
+; |freq|LessThan1~3    ; |freq|LessThan1~3          ; combout          ;
+; |freq|Selector19~0   ; |freq|Selector19~0         ; combout          ;
+; |freq|m[1]~126       ; |freq|m[1]~126             ; combout          ;
+; |freq|calc~9         ; |freq|calc~9               ; combout          ;
+; |freq|m[7]~127       ; |freq|m[7]~127             ; combout          ;
+; |freq|flag_gate[1]   ; |freq|m[1]~128             ; combout          ;
+; |freq|flag_gate[1]   ; |freq|flag_gate[1]         ; regout           ;
+; |freq|m[7]~129       ; |freq|m[7]~129             ; combout          ;
+; |freq|Add5~0         ; |freq|Add5~0               ; combout          ;
+; |freq|m[7]~130       ; |freq|m[7]~130             ; combout          ;
+; |freq|m[7]~131       ; |freq|m[7]~131             ; combout          ;
+; |freq|m[7]~132       ; |freq|m[7]~132             ; combout          ;
+; |freq|Add6~0         ; |freq|Add6~0               ; combout          ;
+; |freq|Add6~1         ; |freq|Add6~1               ; combout          ;
+; |freq|m[9]~133       ; |freq|m[9]~133             ; combout          ;
+; |freq|m[9]~134       ; |freq|m[9]~134             ; combout          ;
+; |freq|m[9]~135       ; |freq|m[9]~135             ; combout          ;
+; |freq|Equal7~0       ; |freq|Equal7~0             ; combout          ;
+; |freq|Add7~0         ; |freq|Add7~0               ; combout          ;
+; |freq|Add7~1         ; |freq|Add7~1               ; combout          ;
+; |freq|Selector16~3   ; |freq|Selector16~3         ; combout          ;
+; |freq|mt[8]~48       ; |freq|mt[8]~48             ; combout          ;
+; |freq|LessThan0~7    ; |freq|LessThan0~7          ; combout          ;
+; |freq|div[17]~140    ; |freq|div[17]~140          ; combout          ;
+; |freq|clk_in~2       ; |freq|clk_in~2             ; combout          ;
+; |freq|clk_cnt~2      ; |freq|clk_cnt~2            ; combout          ;
+; |freq|Selector17~0   ; |freq|Selector17~0         ; combout          ;
+; |freq|Selector16~4   ; |freq|Selector16~4         ; combout          ;
+; |freq|Selector17~1   ; |freq|Selector17~1         ; combout          ;
+; |freq|ss.ss_calc~1   ; |freq|ss.ss_calc~1         ; combout          ;
+; |freq|LessThan0~10   ; |freq|LessThan0~10         ; cout             ;
+; |freq|cnt[1]         ; |freq|cnt[1]               ; regout           ;
+; |freq|cnt[2]         ; |freq|cnt[2]               ; regout           ;
+; |freq|cnt[0]         ; |freq|Equal0~0             ; combout          ;
+; |freq|cnt[0]         ; |freq|cnt[0]               ; regout           ;
+; |freq|cnt[12]        ; |freq|Equal0~3             ; combout          ;
+; |freq|clk_gate       ; |freq|clk_gate             ; combout          ;
+; |freq|LessThan0~15   ; |freq|LessThan0~15         ; cout0            ;
+; |freq|LessThan0~15   ; |freq|LessThan0~15COUT1_87 ; cout1            ;
+; |freq|Add0~36        ; |freq|Add0~36              ; combout          ;
+; |freq|Add0~36        ; |freq|Add0~37              ; cout             ;
+; |freq|Add0~38        ; |freq|Add0~38              ; combout          ;
+; |freq|Add0~38        ; |freq|Add0~39COUT1_73      ; cout1            ;
+; |freq|Add0~40        ; |freq|Add0~40              ; combout          ;
+; |freq|Add0~40        ; |freq|Add0~41COUT1_75      ; cout1            ;
+; |freq|Add0~42        ; |freq|Add0~42              ; combout          ;
+; |freq|cnt_10[0]      ; |freq|cnt_10[0]            ; regout           ;
+; |freq|cnt_10[1]      ; |freq|cnt_10[1]            ; regout           ;
+; |freq|cnt_10[2]      ; |freq|cnt_10[2]            ; regout           ;
+; |freq|LessThan0~20   ; |freq|LessThan0~20         ; cout0            ;
+; |freq|LessThan0~20   ; |freq|LessThan0~20COUT1_85 ; cout1            ;
+; |freq|LessThan0~25   ; |freq|LessThan0~25COUT1_83 ; cout1            ;
+; |freq|LessThan0~30   ; |freq|LessThan0~30COUT1_81 ; cout1            ;
+; |freq|LessThan0~35   ; |freq|LessThan0~35         ; cout             ;
+; |freq|LessThan0~40   ; |freq|LessThan0~40         ; cout0            ;
+; |freq|LessThan0~40   ; |freq|LessThan0~40COUT1_79 ; cout1            ;
+; |freq|LessThan0~45   ; |freq|LessThan0~45         ; cout0            ;
+; |freq|LessThan0~45   ; |freq|LessThan0~45COUT1_77 ; cout1            ;
+; |freq|LessThan0~50   ; |freq|LessThan0~50         ; cout0            ;
+; |freq|LessThan0~50   ; |freq|LessThan0~50COUT1_75 ; cout1            ;
+; |freq|LessThan0~55   ; |freq|LessThan0~55         ; cout0            ;
+; |freq|LessThan0~60   ; |freq|LessThan0~60         ; cout             ;
+; |freq|Selector16~6   ; |freq|Selector16~6         ; combout          ;
+; |freq|m[1]~136       ; |freq|m[1]~136             ; combout          ;
+; |freq|m[1]~137       ; |freq|m[1]~137             ; combout          ;
+; |freq|key            ; |freq|key~corein           ; combout          ;
+; |freq|signal_f       ; |freq|signal_f~corein      ; combout          ;
+; |freq|clk            ; |freq|clk~corein           ; combout          ;
+; |freq|signal_t       ; |freq|signal_t~corein      ; combout          ;
+; |freq|segdat[0]      ; |freq|segdat[0]            ; padio            ;
+; |freq|segdat[2]      ; |freq|segdat[2]            ; padio            ;
+; |freq|segdat[3]      ; |freq|segdat[3]            ; padio            ;
+; |freq|segdat[4]      ; |freq|segdat[4]            ; padio            ;
+; |freq|segdat[5]      ; |freq|segdat[5]            ; padio            ;
+; |freq|segdat[6]      ; |freq|segdat[6]            ; padio            ;
+; |freq|segdat[7]      ; |freq|segdat[7]            ; padio            ;
+; |freq|segpos[0]      ; |freq|segpos[0]            ; padio            ;
+; |freq|segpos[1]      ; |freq|segpos[1]            ; padio            ;
+; |freq|segpos[2]      ; |freq|segpos[2]            ; padio            ;
+; |freq|segpos[3]      ; |freq|segpos[3]            ; padio            ;
+; |freq|calc           ; |freq|calc                 ; padio            ;
+; |freq|m[0]           ; |freq|m[0]                 ; padio            ;
+; |freq|m[1]           ; |freq|m[1]                 ; padio            ;
+; |freq|m[2]           ; |freq|m[2]                 ; padio            ;
+; |freq|m[3]           ; |freq|m[3]                 ; padio            ;
+; |freq|m[4]           ; |freq|m[4]                 ; padio            ;
+; |freq|m[5]           ; |freq|m[5]                 ; padio            ;
+; |freq|m[6]           ; |freq|m[6]                 ; padio            ;
+; |freq|m[7]           ; |freq|m[7]                 ; padio            ;
+; |freq|m[8]           ; |freq|m[8]                 ; padio            ;
+; |freq|m[9]           ; |freq|m[9]                 ; padio            ;
+; |freq|m[10]          ; |freq|m[10]                ; padio            ;
+; |freq|m[11]          ; |freq|m[11]                ; padio            ;
+; |freq|m[12]          ; |freq|m[12]                ; padio            ;
+; |freq|mt[0]          ; |freq|mt[0]                ; padio            ;
+; |freq|mt[1]          ; |freq|mt[1]                ; padio            ;
+; |freq|mt[2]          ; |freq|mt[2]                ; padio            ;
+; |freq|mt[3]          ; |freq|mt[3]                ; padio            ;
+; |freq|mt[4]          ; |freq|mt[4]                ; padio            ;
+; |freq|mt[5]          ; |freq|mt[5]                ; padio            ;
+; |freq|mt[6]          ; |freq|mt[6]                ; padio            ;
+; |freq|mt[7]          ; |freq|mt[7]                ; padio            ;
+; |freq|mt[8]          ; |freq|mt[8]                ; padio            ;
+; |freq|mt[9]          ; |freq|mt[9]                ; padio            ;
+; |freq|div[1]         ; |freq|div[1]               ; padio            ;
+; |freq|div[2]         ; |freq|div[2]               ; padio            ;
+; |freq|div[3]         ; |freq|div[3]               ; padio            ;
+; |freq|div[4]         ; |freq|div[4]               ; padio            ;
+; |freq|div[5]         ; |freq|div[5]               ; padio            ;
+; |freq|div[6]         ; |freq|div[6]               ; padio            ;
+; |freq|div[7]         ; |freq|div[7]               ; padio            ;
+; |freq|div[8]         ; |freq|div[8]               ; padio            ;
+; |freq|div[9]         ; |freq|div[9]               ; padio            ;
+; |freq|div[10]        ; |freq|div[10]              ; padio            ;
+; |freq|div[11]        ; |freq|div[11]              ; padio            ;
+; |freq|div[12]        ; |freq|div[12]              ; padio            ;
+; |freq|div[13]        ; |freq|div[13]              ; padio            ;
+; |freq|div[14]        ; |freq|div[14]              ; padio            ;
+; |freq|div[15]        ; |freq|div[15]              ; padio            ;
+; |freq|div[16]        ; |freq|div[16]              ; padio            ;
+; |freq|div[17]        ; |freq|div[17]              ; padio            ;
+; |freq|div[18]        ; |freq|div[18]              ; padio            ;
+; |freq|div[19]        ; |freq|div[19]              ; padio            ;
+; |freq|clk_cnt        ; |freq|clk_cnt              ; padio            ;
+; |freq|gate           ; |freq|gate                 ; padio            ;
++----------------------+----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------+
+; Missing 1-Value Coverage                                           ;
++--------------------+----------------------------+------------------+
+; Node Name          ; Output Port Name           ; Output Port Type ;
++--------------------+----------------------------+------------------+
+; |freq|digi_buf[13] ; |freq|digi_buf[13]         ; regout           ;
+; |freq|digi_buf[2]  ; |freq|digi_buf[2]          ; regout           ;
+; |freq|digi_buf[6]  ; |freq|Mux1~0               ; combout          ;
+; |freq|digi_buf[10] ; |freq|Mux1~1               ; combout          ;
+; |freq|digi_buf[3]  ; |freq|digi_buf[3]          ; regout           ;
+; |freq|digi_buf[7]  ; |freq|Mux0~0               ; combout          ;
+; |freq|segdat~3     ; |freq|segdat~3             ; combout          ;
+; |freq|m[13]~reg0   ; |freq|m[13]~reg0           ; regout           ;
+; |freq|mt[1]~reg0   ; |freq|mt[1]~27             ; cout0            ;
+; |freq|mt[2]~reg0   ; |freq|mt[2]~29             ; cout0            ;
+; |freq|mt[3]~reg0   ; |freq|mt[3]~31             ; cout0            ;
+; |freq|mt[4]~reg0   ; |freq|mt[4]~33             ; cout0            ;
+; |freq|mt[6]~reg0   ; |freq|mt[6]~37COUT1_67     ; cout1            ;
+; |freq|mt[7]~reg0   ; |freq|mt[7]~39COUT1_69     ; cout1            ;
+; |freq|mt[8]~reg0   ; |freq|mt[8]~41COUT1_71     ; cout1            ;
+; |freq|mt[9]~reg0   ; |freq|mt[9]~43COUT1_73     ; cout1            ;
+; |freq|mt[10]~reg0  ; |freq|mt[10]~45            ; cout             ;
+; |freq|div[10]~reg0 ; |freq|div[10]~121COUT1_175 ; cout1            ;
+; |freq|div[15]~reg0 ; |freq|div[15]~131COUT1_183 ; cout1            ;
+; |freq|div[16]~reg0 ; |freq|div[16]~133COUT1_185 ; cout1            ;
+; |freq|div[17]~reg0 ; |freq|div[17]~135COUT1_187 ; cout1            ;
+; |freq|div[18]~reg0 ; |freq|div[18]~137COUT1_189 ; cout1            ;
+; |freq|cnt[3]       ; |freq|cnt[3]               ; regout           ;
+; |freq|cnt[5]       ; |freq|cnt[5]               ; regout           ;
+; |freq|cnt[6]       ; |freq|cnt[6]               ; regout           ;
+; |freq|cnt[7]       ; |freq|cnt[7]               ; regout           ;
+; |freq|cnt[4]       ; |freq|Equal0~1             ; combout          ;
+; |freq|cnt[4]       ; |freq|cnt[4]               ; regout           ;
+; |freq|cnt[9]       ; |freq|cnt[9]               ; regout           ;
+; |freq|cnt[10]      ; |freq|cnt[10]              ; regout           ;
+; |freq|cnt[11]      ; |freq|cnt[11]              ; regout           ;
+; |freq|cnt[8]       ; |freq|Equal0~2             ; combout          ;
+; |freq|cnt[8]       ; |freq|cnt[8]               ; regout           ;
+; |freq|cnt[12]      ; |freq|cnt[12]              ; regout           ;
+; |freq|Add0~38      ; |freq|Add0~39              ; cout0            ;
+; |freq|Add0~40      ; |freq|Add0~41              ; cout0            ;
+; |freq|Add0~42      ; |freq|Add0~43              ; cout0            ;
+; |freq|Add0~42      ; |freq|Add0~43COUT1_77      ; cout1            ;
+; |freq|Add0~44      ; |freq|Add0~44              ; combout          ;
+; |freq|Add0~44      ; |freq|Add0~45              ; cout0            ;
+; |freq|Add0~44      ; |freq|Add0~45COUT1_79      ; cout1            ;
+; |freq|Add0~46      ; |freq|Add0~46              ; combout          ;
+; |freq|Add0~46      ; |freq|Add0~47              ; cout             ;
+; |freq|Add0~48      ; |freq|Add0~48              ; combout          ;
+; |freq|Add0~48      ; |freq|Add0~49              ; cout0            ;
+; |freq|Add0~48      ; |freq|Add0~49COUT1_81      ; cout1            ;
+; |freq|Add0~50      ; |freq|Add0~50              ; combout          ;
+; |freq|Add0~50      ; |freq|Add0~51              ; cout0            ;
+; |freq|Add0~50      ; |freq|Add0~51COUT1_83      ; cout1            ;
+; |freq|Add0~52      ; |freq|Add0~52              ; combout          ;
+; |freq|Add0~52      ; |freq|Add0~53              ; cout0            ;
+; |freq|Add0~52      ; |freq|Add0~53COUT1_85      ; cout1            ;
+; |freq|Add0~54      ; |freq|Add0~54              ; combout          ;
+; |freq|Add0~54      ; |freq|Add0~55              ; cout0            ;
+; |freq|Add0~54      ; |freq|Add0~55COUT1_87      ; cout1            ;
+; |freq|Add0~56      ; |freq|Add0~56              ; combout          ;
+; |freq|Add0~56      ; |freq|Add0~57              ; cout             ;
+; |freq|Add0~58      ; |freq|Add0~58              ; combout          ;
+; |freq|Add0~58      ; |freq|Add0~59              ; cout0            ;
+; |freq|Add0~58      ; |freq|Add0~59COUT1_89      ; cout1            ;
+; |freq|Add0~60      ; |freq|Add0~60              ; combout          ;
+; |freq|LessThan0~25 ; |freq|LessThan0~25         ; cout0            ;
+; |freq|LessThan0~30 ; |freq|LessThan0~30         ; cout0            ;
+; |freq|LessThan0~55 ; |freq|LessThan0~55COUT1_73 ; cout1            ;
+; |freq|~GND         ; |freq|~GND                 ; combout          ;
+; |freq|segdat[1]    ; |freq|segdat[1]            ; padio            ;
+; |freq|m[13]        ; |freq|m[13]                ; padio            ;
+; |freq|m[14]        ; |freq|m[14]                ; padio            ;
+; |freq|m[15]        ; |freq|m[15]                ; padio            ;
+; |freq|mt[11]       ; |freq|mt[11]               ; padio            ;
+; |freq|div[0]       ; |freq|div[0]               ; padio            ;
++--------------------+----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------+
+; Missing 0-Value Coverage                                           ;
++--------------------+----------------------------+------------------+
+; Node Name          ; Output Port Name           ; Output Port Type ;
++--------------------+----------------------------+------------------+
+; |freq|digi_buf[13] ; |freq|digi_buf[13]         ; regout           ;
+; |freq|digi_buf[2]  ; |freq|digi_buf[2]          ; regout           ;
+; |freq|digi_buf[6]  ; |freq|Mux1~0               ; combout          ;
+; |freq|digi_buf[10] ; |freq|Mux1~1               ; combout          ;
+; |freq|digi_buf[3]  ; |freq|digi_buf[3]          ; regout           ;
+; |freq|digi_buf[7]  ; |freq|Mux0~0               ; combout          ;
+; |freq|segdat~3     ; |freq|segdat~3             ; combout          ;
+; |freq|m[13]~reg0   ; |freq|m[13]~reg0           ; regout           ;
+; |freq|mt[1]~reg0   ; |freq|mt[1]~27             ; cout0            ;
+; |freq|mt[2]~reg0   ; |freq|mt[2]~29             ; cout0            ;
+; |freq|mt[3]~reg0   ; |freq|mt[3]~31             ; cout0            ;
+; |freq|mt[4]~reg0   ; |freq|mt[4]~33             ; cout0            ;
+; |freq|mt[6]~reg0   ; |freq|mt[6]~37COUT1_67     ; cout1            ;
+; |freq|mt[7]~reg0   ; |freq|mt[7]~39COUT1_69     ; cout1            ;
+; |freq|mt[8]~reg0   ; |freq|mt[8]~41COUT1_71     ; cout1            ;
+; |freq|mt[9]~reg0   ; |freq|mt[9]~43COUT1_73     ; cout1            ;
+; |freq|mt[10]~reg0  ; |freq|mt[10]~45            ; cout             ;
+; |freq|div[10]~reg0 ; |freq|div[10]~121COUT1_175 ; cout1            ;
+; |freq|div[15]~reg0 ; |freq|div[15]~131COUT1_183 ; cout1            ;
+; |freq|div[16]~reg0 ; |freq|div[16]~133COUT1_185 ; cout1            ;
+; |freq|div[17]~reg0 ; |freq|div[17]~135COUT1_187 ; cout1            ;
+; |freq|div[18]~reg0 ; |freq|div[18]~137COUT1_189 ; cout1            ;
+; |freq|LessThan1~0  ; |freq|LessThan1~0          ; combout          ;
+; |freq|cnt[3]       ; |freq|cnt[3]               ; regout           ;
+; |freq|cnt[5]       ; |freq|cnt[5]               ; regout           ;
+; |freq|cnt[6]       ; |freq|cnt[6]               ; regout           ;
+; |freq|cnt[7]       ; |freq|cnt[7]               ; regout           ;
+; |freq|cnt[4]       ; |freq|Equal0~1             ; combout          ;
+; |freq|cnt[4]       ; |freq|cnt[4]               ; regout           ;
+; |freq|cnt[9]       ; |freq|cnt[9]               ; regout           ;
+; |freq|cnt[10]      ; |freq|cnt[10]              ; regout           ;
+; |freq|cnt[11]      ; |freq|cnt[11]              ; regout           ;
+; |freq|cnt[8]       ; |freq|Equal0~2             ; combout          ;
+; |freq|cnt[8]       ; |freq|cnt[8]               ; regout           ;
+; |freq|cnt[12]      ; |freq|cnt[12]              ; regout           ;
+; |freq|Add0~38      ; |freq|Add0~39              ; cout0            ;
+; |freq|Add0~40      ; |freq|Add0~41              ; cout0            ;
+; |freq|Add0~42      ; |freq|Add0~43              ; cout0            ;
+; |freq|Add0~42      ; |freq|Add0~43COUT1_77      ; cout1            ;
+; |freq|Add0~44      ; |freq|Add0~44              ; combout          ;
+; |freq|Add0~44      ; |freq|Add0~45              ; cout0            ;
+; |freq|Add0~44      ; |freq|Add0~45COUT1_79      ; cout1            ;
+; |freq|Add0~46      ; |freq|Add0~46              ; combout          ;
+; |freq|Add0~46      ; |freq|Add0~47              ; cout             ;
+; |freq|Add0~48      ; |freq|Add0~48              ; combout          ;
+; |freq|Add0~48      ; |freq|Add0~49              ; cout0            ;
+; |freq|Add0~48      ; |freq|Add0~49COUT1_81      ; cout1            ;
+; |freq|Add0~50      ; |freq|Add0~50              ; combout          ;
+; |freq|Add0~50      ; |freq|Add0~51              ; cout0            ;
+; |freq|Add0~50      ; |freq|Add0~51COUT1_83      ; cout1            ;
+; |freq|Add0~52      ; |freq|Add0~52              ; combout          ;
+; |freq|Add0~52      ; |freq|Add0~53              ; cout0            ;
+; |freq|Add0~52      ; |freq|Add0~53COUT1_85      ; cout1            ;
+; |freq|Add0~54      ; |freq|Add0~54              ; combout          ;
+; |freq|Add0~54      ; |freq|Add0~55              ; cout0            ;
+; |freq|Add0~54      ; |freq|Add0~55COUT1_87      ; cout1            ;
+; |freq|Add0~56      ; |freq|Add0~56              ; combout          ;
+; |freq|Add0~56      ; |freq|Add0~57              ; cout             ;
+; |freq|Add0~58      ; |freq|Add0~58              ; combout          ;
+; |freq|Add0~58      ; |freq|Add0~59              ; cout0            ;
+; |freq|Add0~58      ; |freq|Add0~59COUT1_89      ; cout1            ;
+; |freq|Add0~60      ; |freq|Add0~60              ; combout          ;
+; |freq|LessThan0~25 ; |freq|LessThan0~25         ; cout0            ;
+; |freq|LessThan0~30 ; |freq|LessThan0~30         ; cout0            ;
+; |freq|LessThan0~55 ; |freq|LessThan0~55COUT1_73 ; cout1            ;
+; |freq|~GND         ; |freq|~GND                 ; combout          ;
+; |freq|mode         ; |freq|mode                 ; padio            ;
+; |freq|segdat[1]    ; |freq|segdat[1]            ; padio            ;
+; |freq|m[13]        ; |freq|m[13]                ; padio            ;
+; |freq|m[14]        ; |freq|m[14]                ; padio            ;
+; |freq|m[15]        ; |freq|m[15]                ; padio            ;
+; |freq|mt[10]       ; |freq|mt[10]               ; padio            ;
+; |freq|mt[11]       ; |freq|mt[11]               ; padio            ;
+; |freq|div[0]       ; |freq|div[0]               ; padio            ;
++--------------------+----------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Thu Jan 15 12:12:53 2015
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off freq -c freq
+Info: Using vector source file "E:/Workspace/Quartus/freq9_2/freq.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      74.66 %
+Info: Number of transitions in simulation is 1012085
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 163 megabytes
+    Info: Processing ended: Thu Jan 15 12:13:07 2015
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:14
+
+
